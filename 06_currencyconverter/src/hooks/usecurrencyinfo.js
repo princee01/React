@@ -4,13 +4,13 @@ function useCurrencyInfo(currency) {
     const [data,setdata]=useState({})
     useEffect(() => {
         
-        fetch(`https://currency-rate-exchange-api.onrender.com/${currency}`)
+        fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)
             .then((res) => res.json())
             .then((res) => setdata(res[currency]))
-        console.log(data);
+        // console.log(data);
     }, [currency])
     
-    console.log(data);
+    //console.log(data);
     return data;
 }
 export default useCurrencyInfo;
