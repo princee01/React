@@ -11,7 +11,7 @@ function App() {
 
   return (
     <UserContextProvider>
-      <h1>react + chai </h1>
+      <h1>ContextAPI</h1>
       <Login />
       <Profile/>
     </UserContextProvider>

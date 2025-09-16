@@ -4,8 +4,9 @@ import UserContext from "./UserContext";
 const UserContextProvider = ({ children }) => {
     
     const [user, setUser] = React.useState(null);
+    const [pass, setpass] = React.useState(null);
     return (
-        <UserContext.Provider value={{user,setUser}}> 
+        <UserContext.Provider value={{user,setUser,pass,setpass}}> 
         {children}
         </UserContext.Provider>
     )
